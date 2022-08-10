@@ -13,3 +13,24 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+
+//UNIT TESTS FOR sayHello() FUNCTION
+/* TODO: testing a sayHello() function that takes in a name as
+    an argument and returns a string that says hello to that name.
+ */
+describe('sayHello', function() {
+    it('should be a defined function', function() {
+        expect(typeof sayHello).toBe('function');
+    });
+    it('should return a string when called', function() {
+        expect(typeof sayHello()).toBe("string");
+    });
+    it('should return the string "Hello, " and name when executed', function () {
+        expect(sayHello()).toBe("Hello, " + name);
+    });
+    it('should never return "undefined" when called', function () {
+        expect(sayHello()).not.toBe(undefined);
+    })
+});
+
+//
