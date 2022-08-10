@@ -26,7 +26,7 @@ function helloWorld() {
  */
 
 /*
-CREATING A VARIABLE INSIDE THE BODY:
+CREATING A VARIABLE:
 var greeting;
 function helloWorld() {
      greeting = "Hello, World!";
@@ -40,7 +40,19 @@ const helloWorld = function() {
     return "Hello, World!";
 }
 
-//CODE TEST FOR sayHello() FUNCTION
-function sayHello(name) {
-    return "Hello, " + name;
+// CODE TEST FOR sayHello() FUNCTION (BEFORE REFACTOR)
+/*function sayHello(input) {
+    if(input === "Alex") {
+        return "Hello, Alex!";
+    } else if(input === "Pat") {
+        return "Hello, Pat!";
+    } else {
+        return "Hello, Jane!";
+}
+}
+*/
+
+// AFTER REFACTOR
+function sayHello(input) {
+    return "Hello, " + input + "!";
 }
