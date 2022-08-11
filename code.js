@@ -52,7 +52,28 @@ const helloWorld = function() {
 }
 */
 
-// AFTER REFACTOR
+// AFTER REFACTOR FOR sayHello()
 function sayHello(input) {
-    return "Hello, " + input + "!";
+    if(input) {
+        return "Hello, " + input + "!";
+    } else {
+    return "Hello, World!"
+    }
+}
+
+// CODE TEST FOR isFive() FUNCTION (BEFORE REFACTOR)
+/*function isFive(i) {
+    var i;
+    if(typeof i === "number") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+ */
+
+// AFTER REFACTOR FOR isFive()
+function isFive(five) {
+    return (five === 5 ? true : false );
 }
