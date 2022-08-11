@@ -63,3 +63,53 @@ describe('isFive', function() {
         expect(isFive("5")).toBe(false);
     });
     })
+
+//UNIT TEST FOR isEven() FUNCTION
+/*TODO: returns a boolean no matter the input
+    returns true when executed with isEven(2)
+    returns true when executed with isEven(-4)
+    returns false when executed with isEven(3)
+    returns false when called with isEven("banana")
+    returns true when called with isEven("8")
+    returns false when called with isEven(Infinity)
+    return false when called with a boolean input like isEven(true) or isEven(false)
+    returns false when called without an argument like isEven()
+ */
+describe('isEven', function() {
+    it('should be a defined function', function() {
+        expect(typeof isEven).toBe('function');
+    });
+    it('should return a boolean value', function() {
+        expect(typeof isEven(2)).toBe('boolean');
+        expect(typeof isEven(-2)).toBe('boolean');
+        expect(typeof isEven("2")).toBe('boolean');
+    });
+    it('should return true when passed the number 2', function() {
+        expect(isEven(2)).toBe(true);
+    });
+    it('should return true when passed the number -4', function() {
+        expect(isEven(-4)).toBe(true);
+    });
+    it('should return false when passed the number 3', function() {
+        expect(isEven(3)).toBe(false);
+    });
+    it('should return false when passed the number -11', function() {
+        expect(isEven(-11)).toBe(false);
+    });
+    it('should return false when string "banana" is passed', function() {
+        expect(isEven("banana")).toBe(false);
+    });
+    it('should return true when passed the number 8', function() {
+        expect(isEven(8)).toBe(true);
+    });
+    it('should return false when Infinity is passed', function() {
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it('should return false when a boolean is passed as an argument', function() {
+        expect(isEven(true)).toBe(false);
+        expect(isEven(false)).toBe(false);
+    });
+    it('should return false without an argument', function() {
+        expect(isEven()).toBe(false);
+    })
+});

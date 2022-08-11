@@ -77,3 +77,22 @@ function sayHello(input) {
 function isFive(five) {
     return (five === 5 ? true : false);
 }
+
+// CODE TEST FOR isEven() FUNCTION (BEFORE REFACTOR)
+/*function isEven(num) {
+    if(num === 2) {
+        return true;
+    } else if(num === -4) {
+        return true;
+    } else if(num === 8) {
+        return true;
+    } else {
+        return false;
+    }
+}
+ */
+
+// AFTER REFACTOR FOR isEven()
+function isEven(num) {
+    return (parseInt(num) % 2 == 0 ? true : false);
+}
