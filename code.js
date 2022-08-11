@@ -75,7 +75,7 @@ function sayHello(input) {
 
 // AFTER REFACTOR FOR isFive()
 function isFive(five) {
-    return (five === 5 ? true : false);
+    return (five === 5);
 }
 
 // CODE TEST FOR isEven() FUNCTION (BEFORE REFACTOR)
@@ -94,5 +94,20 @@ function isFive(five) {
 
 // AFTER REFACTOR FOR isEven()
 function isEven(num) {
-    return (parseInt(num) % 2 == 0 ? true : false);
+    return parseInt(num) % 2 === 0;
+}
+
+// CODE TEST FOR isVowel() FUNCTION (BEFORE REFACTOR)
+/*function isVowel(char) {
+    if(char === "a" || char === "A") {
+        return true;
+    } else {
+        return false;
+    }
+}
+ */
+
+// AFTER REFACTOR FOR isVowel()
+function isVowel(char) {
+    return (("aeiouAEIOU".indexOf(char) >= 0));
 }
