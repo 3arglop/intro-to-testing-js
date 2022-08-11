@@ -75,5 +75,5 @@ function sayHello(input) {
 
 // AFTER REFACTOR FOR isFive()
 function isFive(five) {
-    return (five === 5 ? true : false );
+    return (five === 5 ? true : false);
 }
