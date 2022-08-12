@@ -111,3 +111,9 @@ function isEven(num) {
 function isVowel(char) {
     return (("aeiouAEIOU".indexOf(char) >= 0));
 }
+
+// CODE TEST FOR add() FUNCTION (BEFORE REFACTOR)
+function add(x, y) {
+    return parseInt(x) + parseInt(y);
+}
+//NO REFACTOR NEEDED; FEELS SHORT AND SIMPLE :)

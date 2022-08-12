@@ -156,3 +156,42 @@ describe('isVowel', function() {
         expect(isVowel()).toBe(false);
     });
 });
+
+//UNIT TEST FOR add() FUNCTION
+/*TODO: The add function should sum two numbers,
+    as long as each input is a number or a string
+    containing a number!
+    add(2, 3) returns 5
+    add(-3, -9) returns -12
+    add("5", 6) returns 11
+    add("-4", "10") returns 6
+    add("banana", "split") returns NaN
+    add(2, "apples") returns NaN
+    add() returns NaN
+ */
+describe('add', function() {
+    it('should return a defined function', function () {
+        expect(typeof add).toBe('function');
+    });
+    it('should return the sum of numbers 2 and 3', function () {
+        expect(add(2, 3)).toBe(5);
+    });
+    it('should return the sum of numbers -3 and -9', function () {
+        expect(add(-3, -9)).toBe(-12);
+    });
+    it('should return the sum of string "5" and number 6', function () {
+        expect(add("5", 6)).toBe(11);
+    });
+    it('should return the sum of strings "-4" and "10"', function () {
+        expect(add("-4", "10")).toBe(6);
+    });
+    it('should return NaN when strings "banana" and "split" are passed', function () {
+        expect(add("banana", "split")).toBeNaN(true);
+    });
+    it('should return NaN when number 2 and string "apples" are passed', function () {
+        expect(add(2, "apples")).toBeNaN(true);
+    });
+    it('should return NaN when no argument is passed', function() {
+        expect(add()).toBeNaN(true);
+    });
+});
